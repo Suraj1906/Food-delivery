@@ -7,7 +7,7 @@ const FoodCard = ({ id, name, price, desc, img, rating, handleToast }) => {
   const dispatch = useDispatch();
 
   return (
-    <div className="font-bold w-[250px] bg-white p-5 flex flex-col rounded-lg gap-2">
+    <div className="font-bold w-[250px] bg-white  flex flex-col   hover:scale-110 transition-all duration-300  ease-in gap-3 p-4 mt-10 ml-5 rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] hover:shadow-[0px_0px_95px_53px_#00000024]">
       <img
         src={img}
         alt=""

@@ -20,7 +20,7 @@ const Cart = () => {
   return (
     <>
       <div
-        className={`fixed right-0 top-0 w-full lg:w-[20vw] h-full p-5 bg-white mb-3 ${
+        className={`fixed right-0 top-0 w-full lg:w-[20vw] h-full p-5 bg-white mb-3 overflow-x-scroll ${
           activeCart ? "translate-x-0" : "translate-x-full"
         } transition-all duration-500 z-50`}
       >
@@ -51,7 +51,7 @@ const Cart = () => {
           </h2>
         )}
 
-        <div className="absolute bottom-0 ">
+        <div className="relative bottom-0 ">
           <h3 className="font-semibold text-gray-800">Items : {totalQty}</h3>
           <h3 className="font-semibold text-gray-800">
             Total Amount : {totalPrice}
@@ -65,12 +65,19 @@ const Cart = () => {
           </button>
         </div>
       </div>
+      <div className="relative">
       <FaShoppingCart
         onClick={() => setActiveCart(!activeCart)}
         className={`rounded-full bg-white shadow-md text-5xl p-3 fixed bottom-4 right-4 ${
           totalQty > 0 && "animate-bounce delay-500 transition-all"
         } `}
       />
+      {
+              cartItems.length > 0 &&
+              <span className="fixed bottom-4 right-4 bg-green-600 rounded-full text-sm w-5 h-5 grid justify-items-center animate-bounce text-white">{cartItems.length}</span>
+            }
+          </div>
+      
     </>
   );
 };
