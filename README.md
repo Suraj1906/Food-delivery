@@ -56,7 +56,7 @@ Now open http://localhost:5173/ in your browser.
 
 🔗 Live Demo
 
-🌍 [View Live Portfolio](https://flavoro-food-service.netlify.app/)
+🌍 [View Live](https://flavoro-food-service.netlify.app/)
 
 
 📬 Contact
