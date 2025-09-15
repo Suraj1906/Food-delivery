@@ -39,7 +39,7 @@ To run this project locally:
 git clone https://github.com/your-username/food-ordering-app.git
 
 # Navigate to the project folder
-cd food-ordering-app
+cd Food-delivery
 
 # Install dependencies
 npm install
